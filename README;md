@@ -1,0 +1,16 @@
+# Biceps - Polytech OS User
+
+NOM: OUERFILI \
+PRENOM: Taha
+
+## Structure
+- `biceps.c`: Point d'entrée, gère l'interpréteur de commandes et le thread serveur.
+- `creme.c`: Implémente le protocole BEUIP (envoi/réception UDP).
+- `list.c`: Gère la liste chaînée des utilisateurs de manière thread-safe.
+
+## Compilation
+- `make` : produit le binaire `biceps`.
+- `make memory-leak` : produit `biceps-memory-leaks` pour Valgrind.
+- `make clean` : supprime les fichiers objets et binaires.
+
+L'adresse 192.168.88.255 se trouve en #define dans creme.h
